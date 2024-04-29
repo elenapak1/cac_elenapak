@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro | HARRY POTTER</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/9f82c0c3ae.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <span>Harry Potter</span>
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="registro" class="form">
+                <h2>Registro</h2>
+                <form>
+                    <div>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                    </div>
+                    <div>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <div>
+                        <input type="date" name="nacimiento" id="nacimiento" required>
+                    </div>
+                    <div>
+                        <select name="pais" id="pais">
+                                <option value="">País</option>
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CH">Chile</option>
+                                <option value="CO">Colombia</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="PA">Paraguay</option>
+                                <option value="PE">Perú</option>
+                                <option value="UR">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="termino">Acepta términos y condiciones</label>
+                        <input type="checkbox" name="termino" id="termino">
+                    </div>
+                    <div>
+                        <input type="submit" value="Registrarse">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
