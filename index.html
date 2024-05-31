@@ -139,6 +139,17 @@
                     </div>
                 </div>
             </section>
+
+
+        <section id="peliculasAclamadas" class="peliculasAclamadas">
+            <h2>Películas Aclamadas</h2>
+            <div class="galeriaPeliculasAclamadas">
+                <div id="peliculasSection" class="peliculasSection">
+                    <!--aqui se agregaran las tarjetas de peliculas-->
+                </div>
+            </div>
+        </section>
+    
         </main>
 
         <footer>
@@ -154,6 +165,13 @@
                 <i class="fa-solid fa-circle-up"></i>
             </a>
         </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--script que trae peliculas de un servidor de tercero y crea cada pelicula en el dom-->
+    <script src="./js/cargar_peliculas_index.js"></script>
         
     </body>
 </html>

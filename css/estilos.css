@@ -145,17 +145,57 @@ header{
         justify-content: flex-start;
         align-items: start;
         column-gap: 30px;
+        
         div{
             width: 220px;
             height: 350px;
             flex-shrink: 0;
             box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
-           
+            margin-bottom: 20px;
+
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5px;
+            }
+        }
+    }
+}
+
+.peliculasAclamadas{
+    width: 80%;
+    margin:0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    h2{
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+    .galeriaPeliculasAclamadas{
+        
+        .peliculasSection{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+            column-gap: 30px;
+        
+            .pelicula-card {
+                width: 220px;
+                height: 350px;
+                flex-shrink: 0;
+                box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
+                margin-bottom: 30px;
+
+                .card-img-top{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
             }
         }
     }
@@ -193,18 +233,24 @@ header{
     background-color: var(--third-color);
     width: 300px;
     margin: 10px;
+    text-align: center;
     flex-direction: column;
-    text-align: center;
+
     form{
-      flex-direction: column;
-    text-align: center;
-    border: 20px;
-    div{
-        padding: 5px;
+        flex-direction: column;
+        text-align: center;
+        border: 20px;
+        div{
+            padding: 5px;
+        }
     }
 }
-    }
-    
+
+.error-message {
+    color: rgb(164, 13, 13);
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 footer{
     height: 15vh;
